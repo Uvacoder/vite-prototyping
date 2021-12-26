@@ -1,0 +1,68 @@
+{
+	"name": "my-app",
+	"version": "0.2.1",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite serve",
+		"prettier": "prettier --write \"src/**/*.{js,ts,css,vue}\"",
+		"lint": "eslint --ext **/*.js,.ts,.vue --ignore-path .gitignore .",
+		"lint:fix": "eslint --ext **/*.js,.ts,.vue --fix --ignore-path .gitignore ."
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": true,
+		"printWidth": 100,
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"browser": true,
+			"node": true
+		},
+		"extends": [
+			"eslint:recommended",
+			"plugin:prettier/recommended",
+			"plugin:tailwind/recommended",
+			"plugin:vue/essential"
+		],
+		"parserOptions": {
+			"parser": "@typescript-eslint/parser",
+			"sourceType": "module",
+			"ecmaVersion": 2018
+		},
+		"rules": {
+			"no-unused-vars": "off",
+			"@typescript-eslint/no-unused-vars": "off"
+		}
+	},
+	"dependencies": {
+		"vue": "^3.0.5",
+		"vue-router": "^4.0.4"
+	},
+	"devDependencies": {
+		"@iconify/json": "^1.1.303",
+		"@typescript-eslint/parser": "^4.15.1",
+		"@vitejs/plugin-vue": "^1.1.4",
+		"@vue/compiler-sfc": "^3.0.5",
+		"eslint": "^7.20.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-tailwind": "^0.2.0",
+		"eslint-plugin-vue": "^7.6.0",
+		"prettier": "^2.2.1",
+		"typescript": "^4.1.5",
+		"vite": "^2.0.1",
+		"vite-plugin-components": "^0.6.10",
+		"vite-plugin-icons": "^0.2.1",
+		"vite-plugin-pages": "^0.4.3",
+		"vite-plugin-pwa": "^0.4.6",
+		"vite-plugin-windicss": "^0.1.15"
+	}
+}
